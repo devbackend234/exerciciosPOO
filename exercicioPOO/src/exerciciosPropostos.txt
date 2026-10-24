@@ -1,0 +1,111 @@
+5 exercícios de POO em Java
+
+Exercício 1 — Cadastro de funcionário
+Nível 1 · Classes e objetos
+
+Iniciante
+
+Cenário: uma empresa precisa cadastrar seus funcionários e exibir seus dados.
+
+Crie uma classe Funcionario com os atributos:
+- nome (String)
+- cargo (String)
+- salario (double)
+Requisitos:
+1. Crie um método exibirDados() que mostre nome, cargo e salário.
+2. Na classe principal, crie dois objetos Funcionario com dados diferentes.
+3. Chame o método dos dois objetos.
+Objetivo: entender a diferença entre classe, objeto, atributo e método.
+
+Dica: cada funcionário deve ser um objeto independente.
+
+
+Exercício 2 — Conta bancária
+Nível 2 · Encapsulamento
+
+Iniciante+
+
+Cenário: um banco precisa controlar o saldo de seus clientes.
+
+Crie uma classe ContaBancaria com:
+- titular (String)
+- saldo (double)
+Requisitos:
+1. Os atributos devem ser private.
+2. Crie um método depositar(double valor).
+3. Crie um método sacar(double valor).
+4. Não permita depósitos ou saques com valores menores ou iguais a zero.
+5. Não permita saque maior que o saldo disponível.
+6. Crie um método consultarSaldo().
+Teste: crie uma conta com saldo inicial de R$ 500, deposite R$ 200, saque R$ 100 e tente sacar R$ 1.000.
+
+Objetivo: proteger os dados e controlar as operações por métodos.
+
+
+Exercício 3 — Sistema de vendas
+Nível 3 · Construtores e regras de negócio
+
+Intermediário
+
+Cenário: uma loja precisa calcular o valor final de um pedido.
+
+Crie uma classe Produto com:
+- nome (String)
+- preco (double)
+- quantidade (int)
+Requisitos:
+1. Crie um construtor que receba os três atributos.
+2. Crie um método calcularTotal() que retorne preço × quantidade.
+3. Crie um método aplicarDesconto(double percentual).
+4. Não aceite preço negativo, quantidade negativa ou desconto fora do intervalo de 0 a 100%.
+5. Exiba o valor total antes e depois do desconto.
+Teste: produto com preço de R$ 80 e quantidade 5. Aplique desconto de 10%.
+
+Objetivo: organizar regras de negócio dentro da classe responsável pelos dados.
+
+
+Exercício 4 — Sistema de chamados de suporte
+Nível 4 · Enum e mudança de estado
+
+Intermediário
+
+Cenário: uma equipe de suporte precisa acompanhar chamados técnicos.
+
+Crie uma classe Chamado com:
+- numero (int)
+- descricao (String)
+- status (enum StatusChamado)
+O enum deve conter ABERTO, EM_ATENDIMENTO e RESOLVIDO.
+
+Requisitos:
+1. O chamado deve começar como ABERTO.
+2. Crie o método iniciarAtendimento(), que muda o status para EM_ATENDIMENTO.
+3. Crie o método resolver(), que muda o status para RESOLVIDO.
+4. Não permita resolver um chamado que ainda não esteja em atendimento.
+5. Crie um método exibirResumo() com número, descrição e status.
+Teste: abra um chamado, tente resolvê-lo imediatamente, inicie o atendimento e tente resolvê-lo novamente.
+
+Objetivo: representar um fluxo de trabalho real com estados e regras válidas.
+
+
+Exercício 5 — Funcionários e polimorfismo
+Nível 5 · Herança e sobrescrita
+
+Desafio
+
+Cenário: uma empresa calcula bonificações diferentes conforme o tipo de funcionário.
+
+Crie uma classe base Funcionario com nome e salarioBase, além de um método calcularBonus().
+
+Crie duas subclasses:
+- Desenvolvedor: bônus de 10% do salário-base.
+- AnalistaQA: bônus de 8% do salário-base.
+Requisitos:
+1. Use extends para criar as subclasses.
+2. Use @Override para redefinir calcularBonus().
+3. Crie uma lista de funcionários usando o tipo Funcionario.
+4. Percorra a lista e exiba o nome e o bônus de cada pessoa.
+5. Não duplique o código que percorre a lista para cada tipo de funcionário.
+Teste: desenvolvedor com salário de R$ 5.000 e analista QA com salário de R$ 4.000.
+
+Objetivo: compreender herança e polimorfismo aplicados a regras diferentes dentro do mesmo sistema.
