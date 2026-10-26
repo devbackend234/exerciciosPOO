@@ -7,6 +7,10 @@ private double saldo;
 
 /*Metodos*/
 public void ContaBancaria() {};
+public void ContaBancaria(String titular, double saldo) {
+	this.titular=titular;
+	this.saldo=saldo;
+}
 public double  sacar(double saque) {
 	if(saque>saldo) {
 		System.out.println("Operação cancelada");

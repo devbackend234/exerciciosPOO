@@ -9,7 +9,7 @@ public class Funcionario {
 	
 	public Funcionario(){	}
 	public Funcionario(String nome,String cargo, double salario){
-		this.setNome(nome);;
+		this.setNome(nome);
 		this.setCargo(cargo);
 		this.setSalario(salario);
 	}
