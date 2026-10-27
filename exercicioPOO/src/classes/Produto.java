@@ -30,7 +30,7 @@ public class Produto {
 		if(percentual<0&&percentual>100) {
 			System.out.println("Desconto deve estar entre 0% e 100%, valor informado fora do permitido");
 		}
-		double desconto=percentual*(getPreco()*getQuantidade());
+		double desconto=(percentual*(getPreco()*getQuantidade())/100);
 		return desconto;
 		
 		
