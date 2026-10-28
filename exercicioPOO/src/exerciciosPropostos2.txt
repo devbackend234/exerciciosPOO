@@ -1,0 +1,87 @@
+Seu treino de Java POO — 10 exercícios
+
+01 · Fácil
+Cadastro de produto
+Crie uma classe Produto com os atributos nome, preco e quantidade.
+- Crie 2 produtos diferentes.
+- Exiba os dados de cada um.
+- Calcule o valor total em estoque de cada produto.
+Você pratica: classes, atributos, objetos e métodos.
+
+02 · Fácil
+Cadastro de aluno
+Crie uma classe Aluno com nome, nota1 e nota2.
+- Crie um método para calcular a média.
+- Crie outro para informar se o aluno foi aprovado (média mínima 7).
+- Cadastre pelo menos 3 alunos.
+Você pratica: métodos que retornam valores, parâmetros e condições.
+
+03 · Fácil
+Conta bancária
+Crie uma classe ContaBancaria com titular e saldo.
+- Crie métodos para depositar e sacar.
+- Não permita saque maior que o saldo.
+- Exiba o saldo depois de cada operação.
+Você pratica: encapsulamento inicial e regras de negócio.
+
+04 · Fácil para intermediário
+Carrinho de compras
+Crie uma classe ItemCarrinho com nome, preço e quantidade.
+- Calcule o subtotal de cada item.
+- Crie pelo menos 3 itens.
+- Calcule o total da compra.
+Você pratica: interação entre objetos e cálculos com dinheiro.
+
+05 · Intermediário
+Controle de veículos
+Crie uma classe Veiculo com marca, modelo e velocidade atual.
+- Crie métodos para acelerar e frear.
+- Não permita velocidade negativa.
+- Não permita ultrapassar 180 km/h.
+- Crie dois veículos e teste operações diferentes.
+Você pratica: validação, estado do objeto e regras em métodos.
+
+06 · Intermediário
+Cadastro de funcionários
+Crie uma classe Funcionario com nome, cargo e salário.
+- Mantenha os atributos privados.
+- Crie métodos para consultar os dados.
+- Crie um método para aplicar aumento salarial percentual.
+- Não permita salário ou aumento inválidos.
+Você pratica: private, getters, setters quando necessários e encapsulamento.
+
+07 · Intermediário
+Sistema de chamados de suporte
+Crie uma classe Chamado com número, descrição e status.
+- Crie chamados com estado inicial aberto.
+- Permita iniciar o atendimento.
+- Permita resolver somente quando estiver em atendimento.
+- Exiba o resumo de cada chamado.
+Você pratica: construtores, enum, mudanças de estado e regras de negócio.
+
+08 · Intermediário
+Cadastro de animais
+Crie uma classe base Animal e classes Cachorro e Gato.
+- Cada animal deve ter nome e idade.
+- Cada classe deve implementar seu próprio comportamento de emitir som.
+- Teste os comportamentos dos diferentes animais.
+Você pratica: herança, sobrescrita de métodos e polimorfismo.
+
+09 · Intermediário para avançado
+Sistema de biblioteca
+Crie classes Livro, Usuario e Biblioteca.
+- Cadastre vários livros.
+- Permita emprestar livros disponíveis.
+- Não permita emprestar um livro que já está emprestado.
+- Permita devolver um livro.
+Você pratica: colaboração entre objetos, coleções e controle de estado.
+
+10 · Projeto final
+Mini sistema de suporte técnico
+Desenvolva uma versão mais completa do controle de chamados.
+- Cadastre chamados com número, descrição e prioridade.
+- Associe cada chamado a um técnico.
+- Permita iniciar, resolver e consultar chamados.
+- Liste todos os chamados e seus estados.
+- Impessa transições inválidas entre estados.
+Você pratica: integração dos conceitos de POO em um projeto de portfólio.
